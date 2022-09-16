@@ -1,0 +1,5 @@
+[:find
+ (pull ?issue [*])
+ :in $ $before-db % ?ctx
+ :where
+ (attributes-tx ?ctx ?issue :github.issue/body _)]
