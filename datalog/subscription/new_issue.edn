@@ -1,5 +1,11 @@
 [:find
- (pull ?issue [*])
+ (pull ?issue [:github.issue/number
+               :github.issue/title
+               :github.issue/body
+               {:github.issue/repo [:git.repo/name
+                                    {:git.repo/org [:git.org/name]}]}
+               {:github.issue/opened-by [:git.user/name
+                                         :git.user/login]}])
  :in $ $before-db % ?ctx
  :where
  (attributes-tx ?ctx ?issue :github.issue/body _)]
