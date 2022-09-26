@@ -23,3 +23,5 @@ With these changes in place, you can now call `subscribe` in your Extension UI:
 ```
 
 In order to register the extension as skill, you need to `docker build` and push the image to your Docker registry and make sure that the image is visible in your Atomist workspace. When we transact the image, we'll discover the skill metadata and register the skill.
+
+Once it is build and registered, navigate to `https://skills.dso.docker.com/catalog/skills/atomist/skill-extension?stability=unstable` and enable your skill.
