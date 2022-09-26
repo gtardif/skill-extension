@@ -3,7 +3,8 @@
                :github.issue/title
                :github.issue/body
                {:github.issue/repo [:git.repo/name
-                                    {:git.repo/org [:git.org/name]}]}
+                                    {:git.repo/org [:git.org/name
+                                                    :github.org/installation-token]}]}
                {:github.issue/opened-by [:git.user/name
                                          :git.user/login]}])
  :in $ $before-db % ?ctx
