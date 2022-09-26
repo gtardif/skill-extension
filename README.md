@@ -5,7 +5,7 @@ The following files are needed to turn a Docker Desktop extension into a skill:
 * `datalog` - datalog subscriptions 
 * `skill.yaml` - skill metadata
 * `Dockerfile` - copying `skill.yaml` and `datalog` into the file system root of the final image; add the `com.docker.skill.api.version="extension/v2"` label
-* Add `@atomist/skill@1.0.0-branch-extension.9` to your dependencies
+* Add `@atomist/skill@1.0.0-branch-extension.14` to your dependencies
 
 With these changes in place, you can now call `subscribe` in your Extension UI:
 
