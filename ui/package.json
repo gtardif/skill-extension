@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@atomist/skill": "1.0.0-branch-extension.11",
+    "@atomist/skill": "1.0.0-branch-extension.14",
     "@docker/docker-mui-theme": "^0.0.6",
     "@docker/extension-api-client": "^0.2.3",
     "@emotion/react": "^11.9.0",
