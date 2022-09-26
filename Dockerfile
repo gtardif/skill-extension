@@ -39,6 +39,6 @@ COPY docker-compose.yaml .
 COPY metadata.json .
 COPY docker.svg .
 COPY skill.yaml .
-COPY datalog .
+COPY datalog datalog/
 COPY --from=client-builder /ui/build ui
 CMD /service -socket /run/guest-services/extension-skill-extension.sock
